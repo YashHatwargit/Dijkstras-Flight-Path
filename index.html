@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <div class="globe">
+
+        </div>
+        <h1>Locations</h1>
+        <h2 class="start">Select start</h2>
+        <h2 class="destination">Select destination</h2>
+    </div>
+    <div class="world-map">
+        <img src="worldmap.png" alt="world-map">
+        <button class="pin usa" onclick="selectCountry('start', 'United States')">United States</button>
+        <button class="pin france" onclick="selectCountry('start', 'France')">France</button>
+        <button class="pin sweden" onclick="selectCountry('start', 'Sweden')">Sweden</button>
+        <button class="pin south-africa" onclick="selectCountry('start', 'South Africa')">South Africa</button>
+        <button class="pin china" onclick="selectCountry('start', 'China')">China</button>
+        <button class="pin australia" onclick="selectCountry('start', 'Australia')">Australia</button>
+        <button class="pin india" onclick="selectCountry('start', 'India')">India</button>
+        <button class="pin brazil" onclick="selectCountry('start', 'Brazil')">Brazil</button>
+        <button class="pin russia" onclick="selectCountry('start', 'Russia')">Russia</button>
+        <button class="pin japan" onclick="selectCountry('start', 'Japan')">Japan</button>
+    </div>
+    <div class="execute">
+        <p></p>
+    </div>
+    <canvas id="pathCanvas" width="900" height="900"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
