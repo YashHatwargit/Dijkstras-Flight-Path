@@ -1,0 +1,114 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #101224;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    color: beige;
+}
+
+.title h2 {
+    display: none; /* Hidden by default until a selection is made */
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Default max width for larger screens */
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.world-map {
+    width: 100%;
+    height: auto;
+    position: relative; /* Make sure child elements (pins) are positioned relative to this */
+    display: block;
+}
+
+.world-map img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    z-index: 1;
+}
+
+canvas#pathCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Allow clicks to pass through to buttons */
+    z-index: 10; /* Ensure canvas is above the map image */
+    width: 100%; /* Ensure the canvas matches the map width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.pin {
+    position: absolute;
+    z-index: 20; /* Ensure pins are above the canvas */
+    background: #4362f8;
+    padding: 0.3em 0.6em;
+    border: none;
+    border-radius: 1em;
+    color: white;
+    cursor: pointer;
+    animation: pulse 1.3s ease-in-out infinite;
+    transform: translate(-50%, -50%); /* Center the pin at its coordinates */
+}
+
+.pin:hover {
+    transform: scale(1.2) translate(-50%, -50%); /* Maintain centering on hover */
+    background-color: #edeff5;
+    color: #072ef2;
+}
+
+.usa { top: 50%; left: 21%; }
+.france { top: 45%; left: 48%; }
+.sweden { top: 33%; left: 52%; }
+.south-africa { top: 78%; left: 53%; }
+.brazil { top: 71%; left: 32%; }
+.china { top: 45%; left: 74%; }
+.australia { top: 76%; left: 82%; }
+.india { top: 56%; left: 67.5%; }
+.russia { top: 30%; left: 80%; }
+.japan { top: 48%; left: 85%; }
+
+.execute {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: darkgrey;
+    color: #edeff5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.execute p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 1110px) {
+    .map-container {
+        max-width: 100%; /* Allow the map container to fill the screen width */
+        padding: 0; /* Remove padding on smaller screens */
+    }
+
+    .world-map img, canvas#pathCanvas {
+        width: 100%; /* Ensure full width scaling */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
