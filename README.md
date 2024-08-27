@@ -3,6 +3,7 @@ Developed an interactive tool to visualize and animate the shortest path between
 ## Link
 [Link to Webpage](https://yashhatwargit.github.io/Dijkstras-Flight-Path/)  
 ## Images  
-![Screenshot (804)](https://github.com/user-attachments/assets/905cb165-e98f-43bf-80b4-bd33bc1c763c)  
-![Screenshot (806)](https://github.com/user-attachments/assets/31adc9ea-1205-42a0-9f5d-a2607454f26e)
+![Screenshot (804)](https://github.com/user-attachments/assets/905cb165-e98f-43bf-80b4-bd33bc1c763c)    
+![Screenshot (816)](https://github.com/user-attachments/assets/52c1b83e-4ba3-480d-9b04-75c2412fdb17)
+
 
