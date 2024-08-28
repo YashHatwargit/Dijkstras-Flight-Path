@@ -4,7 +4,7 @@ let destinationCountry = "";
 
 const shortestDistancePath = [
     [{ node: 1, weight: 4000 }, { node: 7, weight: 2500 }, { node: 8, weight: 2000 }],
-    [{ node: 0, weight: 4000 }, { node: 2, weight: 1500 }, { node: 7, weight: 3700 }],
+    [{ node: 0, weight: 4000 }, { node: 2, weight: 1500 }, { node: 7, weight: 3700 },{ node: 6, weight: 3000 }],
     [{ node: 1, weight: 1500 }, { node: 4, weight: 3900 }],
     [{ node: 6, weight: 3000 }, { node: 5, weight: 4500 }],
     [{ node: 8, weight: 1200 }, { node: 6, weight: 2000 }, { node: 2, weight: 3900 }, { node: 9, weight: 500 }],
